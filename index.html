@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+
+    <header id = "titleBar">
+        <h2>Weather Dashboard</h2>
+    </header>
+
+    <div id = "content">
+        <section id = "searchBar">
+            <h3>Search for a City:</h3>
+            <input type="text" id = 'city'>
+            <button id = 'searchSubmit'>Search</button>
+            <div id = 'history'><!--Put search history here--></div>
+        </section>
+
+        <section id = 'weatherPanel'>
+            <ul id = 'cityWeather'>
+                <li><h2 id = 'cityName'></h2></li>
+                <li id = 'date'></li>
+                <li id = 'temperature'></li>
+                <li><img id = icon alt=""></li>
+                <li id = 'sky'></li>
+                <li id = 'humidity'></li>
+                <li id = 'wind'></li>
+                <li id = 'uvIndex'></li>
+            </ul>
+            <div id = 'forecast'>
+                <!--Forecast populates here-->
+            </div>
+
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
